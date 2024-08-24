@@ -1,14 +1,12 @@
-const express = require('express');
-// const cors = require('cors');
+import express from "express";
+import path from "path";
+import { createServer } from 'http';
+import routes from "./routes/resume.routes.js";
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 // Initialize express
 const app = express();
-
-// app.use(cors({
-//   origin: (origin, callback) => {
-//     return callback(null, true);
-//   }
-// }));
 
 // Set cors variables
 app.use(function (req, res, next) {
@@ -19,13 +17,16 @@ app.use(function (req, res, next) {
 });
 
 // add the route
-require('./routes/resume.routes')(app, express);
+routes(app, express);
 
-app.use(express.static(__dirname + "../../"));
-app.use(express.static(__dirname + "./"));
+// Set __dirname for directories
+const dirname1 = dirname(fileURLToPath(import.meta.url));
+
+app.use(express.static(path.join(dirname1, "../../")));
+app.use(express.static(path.join(dirname1, "./")));
 
 // Server Initialization
-app.listen("3000", '0.0.0.0',
+createServer(app).listen("3000", '0.0.0.0',
   (error) => {
     if (!error) {
       console.log("App is listening on port 3000");

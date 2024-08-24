@@ -1,4 +1,4 @@
-const resume = async (req, res) => {
+export const resume = async (req, res) => {
   return res.status(200).json({
     name: "Renjie Zhou",
     location: "Lawrenceville, NJ",
@@ -87,8 +87,4 @@ const resume = async (req, res) => {
       }
     ]
   })
-}
-
-module.exports = {
-  resume
 }

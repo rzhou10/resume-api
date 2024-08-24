@@ -1,9 +1,9 @@
-const resume = require('../controllers/resume.controller');
+import {resume} from "../controllers/resume.controller.js"
 
-module.exports = function (app, express) {
+export default function routes (app, express) {
   const router = express.Router();
 
-  router.get('/resume', resume.resume);
+  router.get('/resume', resume);
 
   app.use('/', router);
 }
