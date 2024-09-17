@@ -56,18 +56,11 @@ export const resume = async (req, res) => {
         responsibilities: [
           "Built Rest APIs in C# to dynamically retrieve and update website data.",
           "Utilized OATH authentication to allow password-less login via external services such as Facebook or Google.",
-          "Sped up SQL Server access by replacing the previous Entity Framework with the faster Dapper ORM library."
-        ],
-        years: "2018-2018"
-      },
-      {
-        name: "MedAZ.net",
-        title: "Software Engineer",
-        responsibilities: [
+          "Sped up SQL Server access by replacing the previous Entity Framework with the faster Dapper ORM library.",
           "Made changes to the MaiEDEN web app to improve user accessibility, modernize the UI, and added pages such as a contact form and services page"
         ],
-        years: "2017-2017"
-      },
+        years: "2018-2018"
+      }
     ],
     personalProjects: [
       {
