@@ -17,6 +17,26 @@ export const resume = async (req, res) => {
     },
     workExperience: [
       {
+        name: "American Arbitration Association",
+        title: "React Developer",
+        responsibilities: [
+          "Added a new page with React to allow users to view AI generated claims for a new Arbitration flow.",
+          "Updated the admin page for viewing all submitted cases by filtering for cases filed through specific products"
+        ],
+        years: "2026-present"
+      },
+      {
+        name: "Saporis Engineering",
+        title: "Consultant",
+        responsibilities: [
+          "Worked with a client to fix various bugs and change UI text for a better user experience.",
+          "Created a new API in .NET to converted allow users to fill in customer merge fields in letter templates.",
+          "Added a new React.js login page on new application to accept auth0 login for multi step authentication.",
+          "Worked with a backend engineer to integrate a payment method so claimants/respondents can pay filing fees."
+        ],
+        years: "2025-2026"
+      },
+      {
         name: "Shoppable",
         title: "Software Engineer",
         responsibilities: [
@@ -49,17 +69,6 @@ export const resume = async (req, res) => {
           "Modified the Connectors and Ingestor executables in C# to collect/process additional information about server files and folders, and to improve stability."
         ],
         years: "2019-2021"
-      },
-      {
-        name: "MedAZ.net",
-        title: "Intern",
-        responsibilities: [
-          "Built Rest APIs in C# to dynamically retrieve and update website data.",
-          "Utilized OATH authentication to allow password-less login via external services such as Facebook or Google.",
-          "Sped up SQL Server access by replacing the previous Entity Framework with the faster Dapper ORM library.",
-          "Made changes to the MaiEDEN web app to improve user accessibility, modernize the UI, and added pages such as a contact form and services page"
-        ],
-        years: "2018-2018"
       }
     ],
     personalProjects: [
@@ -73,6 +82,12 @@ export const resume = async (req, res) => {
         link: "https://github.com/rzhou10/Music-Search-and-Recommendation",
         description: "A Node.js web app to query songs based on user terms, and to recommend songs based on genre, ratings, etc as practice to building web applications"
       },
+      {
+        name: "Resume API",
+        link: "https://github.com/rzhou10/resume-api",
+        description: "A small application deployed through AWS’s App Runner that returns this resume as JSON, as a way to gain experience with AWS"
+      },
+      
       {
         name: "Boss Fight",
         link: "https://github.com/rzhou10/Boss-Fight",

@@ -7,7 +7,7 @@
   "keywords": [],
   "author": "Renjie",
   "dependencies": {
-    "express": "^4.19.2",
+    "express": "^5.2.1",
     "http": "^0.0.1-security",
     "path": "^0.12.7"
   },
